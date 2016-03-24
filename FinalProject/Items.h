@@ -7,6 +7,8 @@ private:
 
 public:
 	void setTotalItems(int a);
-	int getBill();
+	int getTotalItems();
+	void setTotal(int b);
+	double getTotal();
 
 };
