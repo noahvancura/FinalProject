@@ -12,3 +12,9 @@ void items::setTotal(int b){
 double items::getTotal(){
 	return total;
 }
+string items::setItem(vector<string> c){
+	item = c;
+}
+string items::getItem(){
+	
+}
