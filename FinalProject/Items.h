@@ -8,14 +8,11 @@ class items{
 private:
 	int TotalItems;
 	double total;
-	vector<string>item;
 
 public:
 	void setTotalItems(int a);
 	int getTotalItems();
-	void setTotal(int b);
+	void setTotal(double b);
 	double getTotal();
-	string setItem(vector<string>c);
-	string getItem();
 
 };

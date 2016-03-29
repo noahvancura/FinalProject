@@ -6,15 +6,9 @@ void items::setTotalItems(int a){
 int items::getTotalItems(){
 	return TotalItems;
 }
-void items::setTotal(int b){
+void items::setTotal(double b){
 	total = b;
 }
 double items::getTotal(){
 	return total;
-}
-string items::setItem(vector<string> c){
-	item = c;
-}
-string items::getItem(){
-	
 }
