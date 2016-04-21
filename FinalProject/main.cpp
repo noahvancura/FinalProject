@@ -14,22 +14,24 @@ int main(){
 
 	vector<string>Items;
 	vector<string>::iterator itr;
-	
+
 	cout << "Welcome To Noah's Grocery Store" << endl;
 	int selection;
 	do {
-	cout << "How can we help you?" << endl;
-	cout << "[1] Dairy" << endl;
-	cout << "[2] Meats" << endl;
-	cout << "[3] Bread" << endl;
-	cout << "[4] Fruit" << endl;
-	cout << "[5] Vegetables" << endl;
-	cout << "[6] Other/Extra" << endl;
-	cout << "[0] Done" << endl;
-	cin >> selection;
-	
+		system("cls");
+		cout << "How can we help you?" << endl;
+		cout << "[1] Dairy" << endl;
+		cout << "[2] Meats" << endl;
+		cout << "[3] Bread" << endl;
+		cout << "[4] Fruit" << endl;
+		cout << "[5] Vegetables" << endl;
+		cout << "[6] Other/Extra" << endl;
+		cout << "[0] Done" << endl;
+		cin >> selection;
+
 		switch (selection){
 		case 1:
+			system("cls");
 			int stwo;
 			cout << "[1] Dairy" << endl;
 			cout << setw(10) << right << "1. Milk" << setw(20) << "2.48" << endl;
@@ -40,7 +42,7 @@ int main(){
 			cout << setw(18) << right << "6. Cream Cheese" << setw(12) << "1.85" << endl;
 			cout << setw(12) << right << "7. Butter" << setw(18) << "2.00" << endl;
 			cout << setw(15) << right << "8. Ice Cream" << setw(15) << "4.50" << endl;
-			cout << setw(10) << right << "9. Back" << endl;
+			cout << setw(10) << right << "0. Back" << endl;
 			cout << "[2] Meats" << endl;
 			cout << "[3] Bread" << endl;
 			cout << "[4] Fruit" << endl;
@@ -48,10 +50,10 @@ int main(){
 			cout << "[6] Other/Extra" << endl;
 			cout << "[0] Done" << endl;
 			cin >> stwo;
-
+			break;
 			if (stwo = 1){
 				Items.push_back("Milk");
-				
+
 			}
 			if (stwo = 2){
 				Items.push_back("Chocolate Milk");
@@ -81,10 +83,12 @@ int main(){
 				Items.push_back("Ice Cream");
 
 			}
-			if (stwo = 9){
+			if (stwo = 0){
 				break;
 			}
+			break;
 		case 2:
+			system("cls");
 			int sthree;
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
@@ -100,11 +104,13 @@ int main(){
 			cout << setw(12) << right << "10. Salmon" << setw(19) << "7.89" << endl;
 			cout << setw(10) << right << "11. Tuna" << setw(21) << "7.89" << endl;
 			cout << setw(13) << right << "12. CatFish" << setw(18) << "7.89" << endl;
+			cout << setw(10) << right << "0. Back" << endl;
 			cout << "[3] Bread" << endl;
 			cout << "[4] Fruit" << endl;
 			cout << "[5] Vegetables" << endl;
 			cout << "[6] Other/Extra" << endl;
 			cout << "[0] Done" << endl;
+			cin >> sthree;
 			if (sthree = 1){
 				Items.push_back("Ribs");
 			}
@@ -143,6 +149,7 @@ int main(){
 			}
 			break;
 		case 3:
+			system("cls");
 			int sfour;
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
@@ -153,6 +160,7 @@ int main(){
 			cout << setw(11) << right << "4. Wheat" << setw(19) << "2.50" << endl;
 			cout << setw(18) << right << "5. Hot Dog Buns" << setw(12) << "1.50" << endl;
 			cout << setw(20) << right << "6. Hamburger Buns" << setw(10) << "1.50" << endl;
+			cout << setw(10) << right << "0. Back" << endl;
 			cout << "[4] Fruit" << endl;
 			cout << "[5] Vegetables" << endl;
 			cout << "[6] Other/Extra" << endl;
@@ -176,17 +184,21 @@ int main(){
 			if (sfour = 6){
 				Items.push_back("Hamburger Buns");
 			}
+			if (sfour = 0){
+				break;
+			}
 			break;
 		case 4:
+			system("cls");
 			int sfive;
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
 			cout << "[3] Bread" << endl;
 			cout << "[4] Fruit" << endl;
-			cout << setw(11) << right << "1. Apples" << setw(19) << "1.25" << endl;
-			cout << setw(12) << right << "2. Bananas" << setw(18) << "1.05" << endl;
-			cout << setw(16) << right << "3. Watermelon" << setw(14) << "4.89"<< endl;
-			cout << setw(16) << right << "4. Strawberrys" << setw(14) << "4.76" << endl;
+			cout << setw(12) << right << "1. Apples" << setw(18) << "1.25" << endl;
+			cout << setw(13) << right << "2. Bananas" << setw(17) << "1.05" << endl;
+			cout << setw(16) << right << "3. Watermelon" << setw(14) << "4.89" << endl;
+			cout << setw(17) << right << "4. Strawberrys" << setw(13) << "4.76" << endl;
 			cout << setw(12) << right << "5. Grapes" << setw(18) << "3.34" << endl;
 			cout << setw(13) << right << "6. Oranges" << setw(17) << "1.40" << endl;
 			cout << setw(11) << right << "7. Kiwis" << setw(19) << "2.99" << endl;
@@ -223,37 +235,75 @@ int main(){
 			if (sfive = 0){
 				break;
 			}
+			break;
 		case 5:
+			int ssix;
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
 			cout << "[3] Bread" << endl;
 			cout << "[4] Fruit" << endl;
 			cout << "[5] Vegetables" << endl;
+			cout << setw(12) << right << "1. Lettus" << setw(18) << "1.10" << endl;
+			cout << setw(13) << right << "2. Carrots" << setw(17) << "1.10" << endl;
+			cout << setw(13) << right << "3. Pickles" << setw(17) << "1.10" << endl;
+			cout << setw(15) << right << "4. Cucumbers" << setw(15) << "1.10" << endl;
+			cout << setw(10) << right << "5. Corn" << setw(20) << "1.10" << endl;
+			cout << setw(13) << right << "6. Potatos" << setw(17) << "1.10" << endl;
+			cout << setw(17) << right << "7. Green Beans" << setw(13) << "1.10" << endl;
+			cout << setw(10) << right << "8. Peas" << setw(20) << "1.10" << endl;
+			cout << setw(10) << right << "0. back" << endl;
 			cout << "[6] Other/Extra" << endl;
 			cout << "[0] Done" << endl;
+			cin >> ssix;
+			if (ssix = 1){
+				Items.push_back("Lettus");
+			}
+			if (ssix = 2){
+				Items.push_back("Carrots");
+			}
+			if (ssix = 3){
+				Items.push_back("Pickles");
+			}
+			if (ssix = 4){
+				Items.push_back("Cucumbers");
+			}
+			if (ssix = 5){
+				Items.push_back("Corn");
+			}
+			if (ssix = 6){
+				Items.push_back("Potatos");
+			}
+			if (ssix = 7){
+				Items.push_back("Green Beans");
+			}
+			if (ssix = 8){
+				Items.push_back("Peas");
+			}
+			if (ssix = 0){
+				break;
+			}
 			break;
 		case 6:
+			system("cls");
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
 			cout << "[3] Bread" << endl;
 			cout << "[4] Fruit" << endl;
 			cout << "[5] Vegetables" << endl;
 			cout << "[6] Other/Extra" << endl;
-			cout << "[0] Done" << endl;
-			break;
-		case 7:
-			cout << "[1] Dairy" << endl;
-			cout << "[2] Meats" << endl;
-			cout << "[3] Bread" << endl;
-			cout << "[4] Fruit" << endl;
-			cout << "[5] Vegetables" << endl;
-			cout << "[6] Other/Extra" << endl;
+			cout << setw(12) << right << "1. Candy Bar" << setw(18) << "1.10" << endl;
+			cout << setw(12) << right << "2. Soup" << setw(18) << "1.10" << endl;
+			cout << setw(12) << right << "3. Toilet Paper" << setw(18) << "1.10" << endl;
+			cout << setw(12) << right << "4. Paper Towel" << setw(18) << "1.10" << endl;
+			cout << setw(12) << right << "5. Gum" << setw(18) << "1.10" << endl;
+			cout << setw(10) << right << "0. back" << endl;
+			cout << setw(10) << right << "0. back" << endl;
 			cout << "[0] Done" << endl;
 			break;
 		}
 	} while (selection != 0);
-	
-	
-	system("pause");
-	return 0;
-}
+
+
+		system("pause");
+		return 0;
+	}
