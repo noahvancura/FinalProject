@@ -16,7 +16,8 @@ int main(){
 	vector<string>::iterator itr;
 
 	cout << "Welcome To Noah's Grocery Store" << endl;
-	int selection;
+	int selection, stwo, sthree, sfour, sfive, ssix;
+
 	do {
 		system("cls");
 		cout << "How can we help you?" << endl;
@@ -32,7 +33,6 @@ int main(){
 		switch (selection){
 		case 1:
 			system("cls");
-			int stwo;
 			cout << "[1] Dairy" << endl;
 			cout << setw(10) << right << "1. Milk" << setw(20) << "2.48" << endl;
 			cout << setw(20) << right << "2. Chocolate Milk" << setw(10) << "2.48" << endl;
@@ -89,7 +89,6 @@ int main(){
 			break;
 		case 2:
 			system("cls");
-			int sthree;
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
 			cout << setw(10) << right << "1. Ribs" << setw(21) << "7.89" << endl;
@@ -285,6 +284,7 @@ int main(){
 			break;
 		case 6:
 			system("cls");
+			int sseven;
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
 			cout << "[3] Bread" << endl;
@@ -297,8 +297,26 @@ int main(){
 			cout << setw(12) << right << "4. Paper Towel" << setw(18) << "1.10" << endl;
 			cout << setw(12) << right << "5. Gum" << setw(18) << "1.10" << endl;
 			cout << setw(10) << right << "0. back" << endl;
-			cout << setw(10) << right << "0. back" << endl;
 			cout << "[0] Done" << endl;
+			cin >> sseven;
+			if (sseven = 1){
+				Items.push_back("Candy Bar");
+			}
+			if (sseven = 2){
+				Items.push_back("Soup");
+			}
+			if (sseven = 3){
+				Items.push_back("Toilet Paper");
+			}
+			if (sseven = 4){
+				Items.push_back("Candy Bar");
+			}
+			if (sseven = 5){
+				Items.push_back("Gum");
+			}
+			if (sseven = 0){
+				break;
+			}
 			break;
 		}
 	} while (selection != 0);
