@@ -6,9 +6,9 @@ void items::setTotalItems(int a){
 int items::getTotalItems(){
 	return TotalItems;
 }
-void items::setTotal(double b){
+void items::setTotal(float b){
 	total = b;
 }
-double items::getTotal(){
+float items::getTotal(){
 	return total;
 }

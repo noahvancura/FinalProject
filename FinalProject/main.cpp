@@ -11,12 +11,13 @@ int main(){
 	cout << "Noah VanCura 3rd hour" << endl;
 	cout << endl;
 
-
+	items t;
 	vector<string>Items;
 	vector<string>::iterator itr;
 
 	cout << "Welcome To Noah's Grocery Store" << endl;
-	int selection, stwo, sthree, sfour, sfive, ssix;
+	int selection, stwo, sthree, sfour, sfive, ssix, sseven;
+	float tempTotal = 0;
 
 	do {
 		system("cls");
@@ -53,7 +54,7 @@ int main(){
 			break;
 			if (stwo = 1){
 				Items.push_back("Milk");
-
+				t.setTotalItems(tempTotal + 1);
 			}
 			if (stwo = 2){
 				Items.push_back("Chocolate Milk");
@@ -149,7 +150,6 @@ int main(){
 			break;
 		case 3:
 			system("cls");
-			int sfour;
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
 			cout << "[3] Bread" << endl;
@@ -189,7 +189,6 @@ int main(){
 			break;
 		case 4:
 			system("cls");
-			int sfive;
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
 			cout << "[3] Bread" << endl;
@@ -236,7 +235,6 @@ int main(){
 			}
 			break;
 		case 5:
-			int ssix;
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
 			cout << "[3] Bread" << endl;
@@ -284,7 +282,6 @@ int main(){
 			break;
 		case 6:
 			system("cls");
-			int sseven;
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
 			cout << "[3] Bread" << endl;
@@ -320,8 +317,6 @@ int main(){
 			break;
 		}
 	} while (selection != 0);
-
-
 		system("pause");
 		return 0;
 	}
