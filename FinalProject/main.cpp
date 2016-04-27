@@ -18,6 +18,7 @@ int main(){
 	cout << "Welcome To Noah's Grocery Store" << endl;
 	int selection, stwo, sthree, sfour, sfive, ssix, sseven;
 	float tempTotal = 0;
+	t.setTotal(tempTotal);
 
 	do {
 		system("cls");
@@ -54,35 +55,35 @@ int main(){
 			break;
 			if (stwo = 1){
 				Items.push_back("Milk");
-				t.setTotalItems(tempTotal + 1);
+				tempTotal + 2.48;
 			}
 			if (stwo = 2){
 				Items.push_back("Chocolate Milk");
-
+				tempTotal + 2.48;
 			}
 			if (stwo = 3){
 				Items.push_back("Yogart");
-
+				tempTotal + 0.89;
 			}
 			if (stwo = 4){
 				Items.push_back("Cheese");
-
+				tempTotal + 1.20;
 			}
 			if (stwo = 5){
 				Items.push_back("Cottage Cheese");
-
+				tempTotal + 1.99;
 			}
 			if (stwo = 6){
 				Items.push_back("Cream Cheese");
-
+				tempTotal + 1.85;
 			}
 			if (stwo = 7){
 				Items.push_back("Butter");
-
+				tempTotal + 2.00;
 			}
 			if (stwo = 8){
 				Items.push_back("Ice Cream");
-
+				tempTotal + 4.50;
 			}
 			if (stwo = 0){
 				break;
@@ -93,17 +94,17 @@ int main(){
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
 			cout << setw(10) << right << "1. Ribs" << setw(21) << "7.89" << endl;
-			cout << setw(11) << right << "2. Bacon" << setw(20) << "7.89" << endl;
-			cout << setw(14) << right << "3. Hot Dogs" << setw(17) << "7.89" << endl;
-			cout << setw(9) << right << "4. Ham" << setw(22) << "7.89" << endl;
-			cout << setw(15) << right << "5. Hamburger" << setw(16) << "7.89" << endl;
-			cout << setw(11) << right << "6. Steak" << setw(20) << "7.89" << endl;
-			cout << setw(15) << right << "7. RoastBeef" << setw(16) << "7.89" << endl;
-			cout << setw(12) << right << "8. Turkey" << setw(19) << "7.89" << endl;
-			cout << setw(13) << right << "9. Chicken" << setw(18) << "7.89" << endl;
-			cout << setw(12) << right << "10. Salmon" << setw(19) << "7.89" << endl;
-			cout << setw(10) << right << "11. Tuna" << setw(21) << "7.89" << endl;
-			cout << setw(13) << right << "12. CatFish" << setw(18) << "7.89" << endl;
+			cout << setw(11) << right << "2. Bacon" << setw(20) << "2.67" << endl;
+			cout << setw(14) << right << "3. Hot Dogs" << setw(17) << "2.06" << endl;
+			cout << setw(9) << right << "4. Ham" << setw(22) << "5.99" << endl;
+			cout << setw(15) << right << "5. Hamburger" << setw(16) << "3.58" << endl;
+			cout << setw(11) << right << "6. Steak" << setw(20) << "4.23" << endl;
+			cout << setw(15) << right << "7. RoastBeef" << setw(16) << "5.00" << endl;
+			cout << setw(12) << right << "8. Turkey" << setw(19) << "9.79" << endl;
+			cout << setw(13) << right << "9. Chicken" << setw(18) << "8.79" << endl;
+			cout << setw(12) << right << "10. Salmon" << setw(19) << "6.59" << endl;
+			cout << setw(10) << right << "11. Tuna" << setw(21) << "7.19" << endl;
+			cout << setw(13) << right << "12. CatFish" << setw(18) << "6.22" << endl;
 			cout << setw(10) << right << "0. Back" << endl;
 			cout << "[3] Bread" << endl;
 			cout << "[4] Fruit" << endl;
@@ -113,39 +114,51 @@ int main(){
 			cin >> sthree;
 			if (sthree = 1){
 				Items.push_back("Ribs");
+				tempTotal + 7.89;
 			}
 			if (sthree = 2){
 				Items.push_back("Bacon");
+				tempTotal + 2.67;
 			}
 			if (sthree = 3){
 				Items.push_back("Hot Dogs");
+				tempTotal + 2.06;
 			}
 			if (sthree = 4){
 				Items.push_back("Ham");
+				tempTotal + 5.99;
 			}
 			if (sthree = 5){
 				Items.push_back("Hamburger");
+				tempTotal + 3.58;
 			}
 			if (sthree = 6){
 				Items.push_back("Steak");
+				tempTotal + 4.23;
 			}
 			if (sthree = 7){
 				Items.push_back("RoastBeef");
+				tempTotal + 5.00;
 			}
 			if (sthree = 8){
 				Items.push_back("Turkey");
+				tempTotal + 9.79;
 			}
 			if (sthree = 9){
 				Items.push_back("Chicken");
+				tempTotal + 8.79;
 			}
 			if (sthree = 10){
 				Items.push_back("Salmon");
+				tempTotal + 6.59;
 			}
 			if (sthree = 11){
 				Items.push_back("Tuna");
+				tempTotal + 7.19;
 			}
 			if (sthree = 12){
 				Items.push_back("CatFish");
+				tempTotal + 6.22;
 			}
 			break;
 		case 3:
@@ -167,21 +180,27 @@ int main(){
 			cin >> sfour;
 			if (sfour = 1){
 				Items.push_back("White");
+				tempTotal + 2.50;
 			}
 			if (sfour = 2){
 				Items.push_back("Whole Wheat");
+				tempTotal + 2.50;
 			}
 			if (sfour = 3){
 				Items.push_back("Whole Grain");
+				tempTotal + 2.50;
 			}
 			if (sfour = 4){
 				Items.push_back("Wheat");
+				tempTotal + 2.50;
 			}
 			if (sfour = 5){
 				Items.push_back("Hot Dog Buns");
+				tempTotal + 1.50;
 			}
 			if (sfour = 6){
 				Items.push_back("Hamburger Buns");
+				tempTotal + 1.50;
 			}
 			if (sfour = 0){
 				break;
@@ -208,27 +227,35 @@ int main(){
 			cin >> sfive;
 			if (sfive = 1){
 				Items.push_back("Apples");
+				tempTotal + 1.25;
 			}
 			if (sfive = 2){
 				Items.push_back("Bananas");
+				tempTotal + 1.05;
 			}
 			if (sfive = 3){
 				Items.push_back("Watermelon");
+				tempTotal + 4.89;
 			}
 			if (sfive = 4){
 				Items.push_back("Strawberrys");
+				tempTotal + 4.76;
 			}
 			if (sfive = 5){
 				Items.push_back("Grapes");
+				tempTotal + 3.34;
 			}
 			if (sfive = 6){
 				Items.push_back("Oranges");
+				tempTotal + 1.40;
 			}
 			if (sfive = 7){
 				Items.push_back("Kiwis");
+				tempTotal + 2.99;
 			}
 			if (sfive = 8){
 				Items.push_back("Catolope");
+				tempTotal + 4.31;
 			}
 			if (sfive = 0){
 				break;
@@ -288,28 +315,33 @@ int main(){
 			cout << "[4] Fruit" << endl;
 			cout << "[5] Vegetables" << endl;
 			cout << "[6] Other/Extra" << endl;
-			cout << setw(12) << right << "1. Candy Bar" << setw(18) << "1.10" << endl;
-			cout << setw(12) << right << "2. Soup" << setw(18) << "1.10" << endl;
-			cout << setw(12) << right << "3. Toilet Paper" << setw(18) << "1.10" << endl;
-			cout << setw(12) << right << "4. Paper Towel" << setw(18) << "1.10" << endl;
-			cout << setw(12) << right << "5. Gum" << setw(18) << "1.10" << endl;
+			cout << setw(12) << right << "1. Candy Bar" << setw(18) << "1.00" << endl;
+			cout << setw(12) << right << "2. Soup" << setw(18) << "1.49" << endl;
+			cout << setw(12) << right << "3. Toilet Paper" << setw(18) << "1.00" << endl;
+			cout << setw(12) << right << "4. Paper Towel" << setw(18) << "1.00" << endl;
+			cout << setw(12) << right << "5. Gum" << setw(18) << "1.50" << endl;
 			cout << setw(10) << right << "0. back" << endl;
 			cout << "[0] Done" << endl;
 			cin >> sseven;
 			if (sseven = 1){
 				Items.push_back("Candy Bar");
+				tempTotal + 1.00;
 			}
 			if (sseven = 2){
 				Items.push_back("Soup");
+				tempTotal + 1.49;
 			}
 			if (sseven = 3){
 				Items.push_back("Toilet Paper");
+				tempTotal + 1.00;
 			}
 			if (sseven = 4){
-				Items.push_back("Candy Bar");
+				Items.push_back("Paper Towel");
+				tempTotal + 1.00;
 			}
 			if (sseven = 5){
 				Items.push_back("Gum");
+				tempTotal + 1.50;
 			}
 			if (sseven = 0){
 				break;

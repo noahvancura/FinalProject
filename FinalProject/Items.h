@@ -7,12 +7,12 @@ using namespace std;
 class items{
 private:
 	int TotalItems;
-	float total;
+	double total;
 
 public:
 	void setTotalItems(int a);
 	int getTotalItems();
-	void setTotal(float b);
-	float getTotal();
+	void setTotal(double b);
+	double getTotal();
 
 };
