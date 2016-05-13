@@ -11,15 +11,14 @@ int main(){
 	cout << "Noah VanCura 3rd hour" << endl;
 	cout << endl;
 
-	items t;
+	items item;
+	
 	vector<string>Items;
 	vector<string>::iterator itr;
 
 	cout << "Welcome To Noah's Grocery Store" << endl;
 	int selection, stwo, sthree, sfour, sfive, ssix, sseven;
-	float tempTotal = 0;
-	t.setTotal(tempTotal);
-
+	
 	do {
 		system("cls");
 		cout << "How can we help you?" << endl;
@@ -32,8 +31,9 @@ int main(){
 		cout << "[0] Done" << endl;
 		cin >> selection;
 
-		switch (selection){
-		case 1:
+
+		if (selection = 1){
+
 			system("cls");
 			cout << "[1] Dairy" << endl;
 			cout << setw(10) << right << "1. Milk" << setw(20) << "2.48" << endl;
@@ -52,44 +52,44 @@ int main(){
 			cout << "[6] Other/Extra" << endl;
 			cout << "[0] Done" << endl;
 			cin >> stwo;
-			break;
 			if (stwo = 1){
 				Items.push_back("Milk");
-				tempTotal + 2.48;
+				continue;
 			}
 			if (stwo = 2){
 				Items.push_back("Chocolate Milk");
-				tempTotal + 2.48;
+				break;
 			}
 			if (stwo = 3){
 				Items.push_back("Yogart");
-				tempTotal + 0.89;
+				break;
 			}
 			if (stwo = 4){
 				Items.push_back("Cheese");
-				tempTotal + 1.20;
+				break;
 			}
 			if (stwo = 5){
 				Items.push_back("Cottage Cheese");
-				tempTotal + 1.99;
+				break;
 			}
 			if (stwo = 6){
 				Items.push_back("Cream Cheese");
-				tempTotal + 1.85;
+				break;
 			}
 			if (stwo = 7){
 				Items.push_back("Butter");
-				tempTotal + 2.00;
+				break;
 			}
 			if (stwo = 8){
 				Items.push_back("Ice Cream");
-				tempTotal + 4.50;
+				break;
 			}
 			if (stwo = 0){
 				break;
 			}
-			break;
-		case 2:
+			continue;
+		}
+		if (selection = 2){
 			system("cls");
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
@@ -114,54 +114,55 @@ int main(){
 			cin >> sthree;
 			if (sthree = 1){
 				Items.push_back("Ribs");
-				tempTotal + 7.89;
+
 			}
 			if (sthree = 2){
 				Items.push_back("Bacon");
-				tempTotal + 2.67;
+
 			}
 			if (sthree = 3){
 				Items.push_back("Hot Dogs");
-				tempTotal + 2.06;
+
 			}
 			if (sthree = 4){
 				Items.push_back("Ham");
-				tempTotal + 5.99;
+
 			}
 			if (sthree = 5){
 				Items.push_back("Hamburger");
-				tempTotal + 3.58;
+
 			}
 			if (sthree = 6){
 				Items.push_back("Steak");
-				tempTotal + 4.23;
+
 			}
 			if (sthree = 7){
 				Items.push_back("RoastBeef");
-				tempTotal + 5.00;
+
 			}
 			if (sthree = 8){
 				Items.push_back("Turkey");
-				tempTotal + 9.79;
+
 			}
 			if (sthree = 9){
 				Items.push_back("Chicken");
-				tempTotal + 8.79;
+
 			}
 			if (sthree = 10){
 				Items.push_back("Salmon");
-				tempTotal + 6.59;
+
 			}
 			if (sthree = 11){
 				Items.push_back("Tuna");
-				tempTotal + 7.19;
+
 			}
 			if (sthree = 12){
 				Items.push_back("CatFish");
-				tempTotal + 6.22;
+
 			}
 			break;
-		case 3:
+		}
+		if (selection = 3){
 			system("cls");
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
@@ -180,33 +181,34 @@ int main(){
 			cin >> sfour;
 			if (sfour = 1){
 				Items.push_back("White");
-				tempTotal + 2.50;
+
 			}
 			if (sfour = 2){
 				Items.push_back("Whole Wheat");
-				tempTotal + 2.50;
+
 			}
 			if (sfour = 3){
 				Items.push_back("Whole Grain");
-				tempTotal + 2.50;
+
 			}
 			if (sfour = 4){
 				Items.push_back("Wheat");
-				tempTotal + 2.50;
+
 			}
 			if (sfour = 5){
 				Items.push_back("Hot Dog Buns");
-				tempTotal + 1.50;
+
 			}
 			if (sfour = 6){
 				Items.push_back("Hamburger Buns");
-				tempTotal + 1.50;
+
 			}
 			if (sfour = 0){
 				break;
 			}
 			break;
-		case 4:
+		}
+		if (selection = 4){
 			system("cls");
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
@@ -227,87 +229,99 @@ int main(){
 			cin >> sfive;
 			if (sfive = 1){
 				Items.push_back("Apples");
-				tempTotal + 1.25;
+
 			}
 			if (sfive = 2){
 				Items.push_back("Bananas");
-				tempTotal + 1.05;
+
 			}
 			if (sfive = 3){
 				Items.push_back("Watermelon");
-				tempTotal + 4.89;
+
 			}
 			if (sfive = 4){
 				Items.push_back("Strawberrys");
-				tempTotal + 4.76;
+
 			}
 			if (sfive = 5){
 				Items.push_back("Grapes");
-				tempTotal + 3.34;
+
 			}
 			if (sfive = 6){
 				Items.push_back("Oranges");
-				tempTotal + 1.40;
+
 			}
 			if (sfive = 7){
 				Items.push_back("Kiwis");
-				tempTotal + 2.99;
+
 			}
 			if (sfive = 8){
 				Items.push_back("Catolope");
-				tempTotal + 4.31;
+
 			}
 			if (sfive = 0){
 				break;
 			}
 			break;
-		case 5:
+		}
+		if (selection = 5){
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
 			cout << "[3] Bread" << endl;
 			cout << "[4] Fruit" << endl;
 			cout << "[5] Vegetables" << endl;
-			cout << setw(12) << right << "1. Lettus" << setw(18) << "1.10" << endl;
-			cout << setw(13) << right << "2. Carrots" << setw(17) << "1.10" << endl;
-			cout << setw(13) << right << "3. Pickles" << setw(17) << "1.10" << endl;
-			cout << setw(15) << right << "4. Cucumbers" << setw(15) << "1.10" << endl;
-			cout << setw(10) << right << "5. Corn" << setw(20) << "1.10" << endl;
-			cout << setw(13) << right << "6. Potatos" << setw(17) << "1.10" << endl;
-			cout << setw(17) << right << "7. Green Beans" << setw(13) << "1.10" << endl;
-			cout << setw(10) << right << "8. Peas" << setw(20) << "1.10" << endl;
+			cout << setw(12) << right << "1. Lettus" << setw(18) << "1.90" << endl;
+			cout << setw(13) << right << "2. Carrots" << setw(17) << "1.40" << endl;
+			cout << setw(13) << right << "3. Pickles" << setw(17) << "1.00" << endl;
+			cout << setw(15) << right << "4. Cucumbers" << setw(15) << "1.00" << endl;
+			cout << setw(10) << right << "5. Corn" << setw(20) << "2.21" << endl;
+			cout << setw(13) << right << "6. Potatos" << setw(17) << "2.09" << endl;
+			cout << setw(17) << right << "7. Green Beans" << setw(13) << "1.06" << endl;
+			cout << setw(10) << right << "8. Peas" << setw(20) << "1.23" << endl;
 			cout << setw(10) << right << "0. back" << endl;
 			cout << "[6] Other/Extra" << endl;
 			cout << "[0] Done" << endl;
 			cin >> ssix;
 			if (ssix = 1){
 				Items.push_back("Lettus");
+
+				break;
+
 			}
 			if (ssix = 2){
 				Items.push_back("Carrots");
+
 			}
 			if (ssix = 3){
 				Items.push_back("Pickles");
+
 			}
 			if (ssix = 4){
 				Items.push_back("Cucumbers");
+
 			}
 			if (ssix = 5){
 				Items.push_back("Corn");
+
 			}
 			if (ssix = 6){
 				Items.push_back("Potatos");
+
 			}
 			if (ssix = 7){
 				Items.push_back("Green Beans");
+
 			}
 			if (ssix = 8){
 				Items.push_back("Peas");
+
 			}
 			if (ssix = 0){
 				break;
 			}
 			break;
-		case 6:
+		}
+		if (selection = 6){
 			system("cls");
 			cout << "[1] Dairy" << endl;
 			cout << "[2] Meats" << endl;
@@ -325,23 +339,23 @@ int main(){
 			cin >> sseven;
 			if (sseven = 1){
 				Items.push_back("Candy Bar");
-				tempTotal + 1.00;
+
 			}
 			if (sseven = 2){
 				Items.push_back("Soup");
-				tempTotal + 1.49;
+
 			}
 			if (sseven = 3){
 				Items.push_back("Toilet Paper");
-				tempTotal + 1.00;
+
 			}
 			if (sseven = 4){
 				Items.push_back("Paper Towel");
-				tempTotal + 1.00;
+
 			}
 			if (sseven = 5){
 				Items.push_back("Gum");
-				tempTotal + 1.50;
+
 			}
 			if (sseven = 0){
 				break;
@@ -349,6 +363,30 @@ int main(){
 			break;
 		}
 	} while (selection != 0);
-		system("pause");
+	int fselection;
+	do {
+		system("cls");
+		cout << "[1] See Total" << endl;
+		cout << "[2] List of Items" << endl;
+		cout << "[3] Print Info. To a File" << endl;
+		cout << "[0] exit program" << endl;
+		cin >> fselection;
+		switch (fselection){
+		case 1:
+
+			system("pause");
+			break;
+		case 2:
+			for (int i = 0; i<Items.size(); i++) {
+				cout << Items[i] << " ";
+				system("pause");
+			}
+
+			break;
+		case 3:
+			break;
+		}
+
+	} while (fselection != 0);
 		return 0;
 	}
