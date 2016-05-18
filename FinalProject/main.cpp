@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <stdlib.h>
 #include <vector>
 #include <string>
@@ -51,19 +52,19 @@ int main(){
 			cout << "[6] Other/Extra" << endl;
 			cout << "[0] Done" << endl;
 			cin >> stwo;
-			if (stwo = 1){
+			if (stwo == 1){
 				Items.push_back("Milk");
 				total += 2.48;
 				Titems++;
 				continue;
 			}
-			if (stwo = 2){
+			if (stwo == 2){
 				Items.push_back("Chocolate Milk");
 				total += 2.48;
 				Titems++;
 				continue;
 			}
-			if (stwo = 3){
+			if (stwo == 3){
 				Items.push_back("Yogart");
 				total += 0.89;
 				Titems++;
@@ -127,79 +128,79 @@ int main(){
 			cout << "[6] Other/Extra" << endl;
 			cout << "[0] Done" << endl;
 			cin >> sthree;
-			if (sthree = 1){
+			if (sthree == 1){
 				Items.push_back("Ribs");
 				total += 7.89;
 				Titems++;
 				continue;
 			}
-			if (sthree = 2){
+			if (sthree == 2){
 				Items.push_back("Bacon");
 				total += 2.67;
 				Titems++;
 				continue;
 			}
-			if (sthree = 3){
+			if (sthree == 3){
 				Items.push_back("Hot Dogs");
 				total += 2.06;
 				Titems++;
 				continue;
 			}
-			if (sthree = 4){
+			if (sthree == 4){
 				Items.push_back("Ham");
 				total += 5.99;
 				Titems++;
 				continue;
 			}
-			if (sthree = 5){
+			if (sthree == 5){
 				Items.push_back("Hamburger");
 				total += 3.58;
 				Titems++;
 				continue;
 			}
-			if (sthree = 6){
+			if (sthree == 6){
 				Items.push_back("Steak");
 				total += 4.23;
 				Titems++;
 				continue;
 			}
-			if (sthree = 7){
+			if (sthree == 7){
 				Items.push_back("RoastBeef");
 				total += 5.00;
 				Titems++;
 				continue;
 			}
-			if (sthree = 8){
+			if (sthree == 8){
 				Items.push_back("Turkey");
 				total += 9.79;
 				Titems++;
 				continue;
 			}
-			if (sthree = 9){
+			if (sthree == 9){
 				Items.push_back("Chicken");
 				total += 8.79;
 				Titems++;
 				continue;
 			}
-			if (sthree = 10){
+			if (sthree == 10){
 				Items.push_back("Salmon");
 				total += 6.59;
 				Titems++;
 				continue;
 			}
-			if (sthree = 11){
+			if (sthree == 11){
 				Items.push_back("Tuna");
 				total += 7.19;
 				Titems++;
 				continue;
 			}
-			if (sthree = 12){
+			if (sthree == 12){
 				Items.push_back("CatFish");
 				total += 6.22;
 				Titems++;
 				continue;
 			}
-			if (sthree = 0){
+			if (sthree == 0){
 				continue;
 			}
 			break;
@@ -221,43 +222,43 @@ int main(){
 			cout << "[6] Other/Extra" << endl;
 			cout << "[0] Done" << endl;
 			cin >> sfour;
-			if (sfour = 1){
+			if (sfour == 1){
 				Items.push_back("White");
 				total += 2.50;
 				Titems++;
 				continue;
 			}
-			if (sfour = 2){
+			if (sfour == 2){
 				Items.push_back("Whole Wheat");
 				total += 2.50;
 				Titems++;
 				continue;
 			}
-			if (sfour = 3){
+			if (sfour == 3){
 				Items.push_back("Whole Grain");
 				total += 2.50;
 				Titems++;
 				continue;
 			}
-			if (sfour = 4){
+			if (sfour == 4){
 				Items.push_back("Wheat");
 				total += 2.50;
 				Titems++;
 				continue;
 			}
-			if (sfour = 5){
+			if (sfour == 5){
 				Items.push_back("Hot Dog Buns");
 				1.50;
 				Titems++;
 				continue;
 			}
-			if (sfour = 6){
+			if (sfour == 6){
 				Items.push_back("Hamburger Buns");
 				total += 1.50;
 				Titems++;
 				continue;
 			}
-			if (sfour = 0){
+			if (sfour == 0){
 				continue;
 			}
 			break;
@@ -281,55 +282,55 @@ int main(){
 			cout << "[6] Other/Extra" << endl;
 			cout << "[0] Done" << endl;
 			cin >> sfive;
-			if (sfive = 1){
+			if (sfive == 1){
 				Items.push_back("Apples");
 				total += 1.25;
 				Titems++;
 				continue;
 			}
-			if (sfive = 2){
+			if (sfive == 2){
 				Items.push_back("Bananas");
 				total += 1.05;
 				Titems++;
 				continue;
 			}
-			if (sfive = 3){
+			if (sfive == 3){
 				Items.push_back("Watermelon");
 				total += 4.85;
 				Titems++;
 				continue;
 			}
-			if (sfive = 4){
+			if (sfive == 4){
 				Items.push_back("Strawberrys");
 				total += 4.76;
 				Titems++;
 				continue;
 			}
-			if (sfive = 5){
+			if (sfive == 5){
 				Items.push_back("Grapes");
 				total += 3.34;
 				Titems++;
 				continue;
 			}
-			if (sfive = 6){
+			if (sfive == 6){
 				Items.push_back("Oranges");
 				total += 1.40;
 				Titems++;
 				continue;
 			}
-			if (sfive = 7){
+			if (sfive == 7){
 				Items.push_back("Kiwis");
 				total += 2.99;
 				Titems++;
 				continue;
 			}
-			if (sfive = 8){
+			if (sfive == 8){
 				Items.push_back("Catolope");
 				total += 4.31;
 				Titems++;
 				continue;
 			}
-			if (sfive = 0){
+			if (sfive == 0){
 				continue;
 			}
 			break;
@@ -352,49 +353,49 @@ int main(){
 			cout << "[6] Other/Extra" << endl;
 			cout << "[0] Done" << endl;
 			cin >> ssix;
-			if (ssix = 1){
+			if (ssix == 1){
 				Items.push_back("Lettus");
 				total += 1.90;
 				Titems++;
 				continue;
 			}
-			if (ssix = 2){
+			if (ssix == 2){
 				Items.push_back("Carrots");
 				total += 1.40;
 				Titems++;
 				continue;
 			}
-			if (ssix = 3){
+			if (ssix == 3){
 				Items.push_back("Pickles");
 				total += 1.00;
 				Titems++;
 				continue;
 			}
-			if (ssix = 4){
+			if (ssix == 4){
 				Items.push_back("Cucumbers");
 				total += 1.00;
 				Titems++;
 				continue;
 			}
-			if (ssix = 5){
+			if (ssix == 5){
 				Items.push_back("Corn");
 				total += 2.21;
 				Titems++;
 				continue;
 			}
-			if (ssix = 6){
+			if (ssix == 6){
 				Items.push_back("Potatos");
 				total += 2.09;
 				Titems++;
 				continue;
 			}
-			if (ssix = 7){
+			if (ssix == 7){
 				Items.push_back("Green Beans");
 				total += 1.06;
 				Titems++;
 				continue;
 			}
-			if (ssix = 8){
+			if (ssix == 8){
 				Items.push_back("Peas");
 				total += 1.23;
 				Titems++;
@@ -421,43 +422,45 @@ int main(){
 			cout << setw(10) << right << "0. back" << endl;
 			cout << "[0] Done" << endl;
 			cin >> sseven;
-			if (sseven = 1){
+			if (sseven == 1){
 				Items.push_back("Candy Bar");
 				total += 1.00;
 				Titems++;
 				continue;
 			}
-			if (sseven = 2){
+			if (sseven == 2){
 				Items.push_back("Soup");
 				total += 1.49;
 				Titems++;
 				continue;
 			}
-			if (sseven = 3){
+			if (sseven == 3){
 				Items.push_back("Toilet Paper");
 				total += 1.00;
 				Titems++;
 				continue;
 			}
-			if (sseven = 4){
+			if (sseven == 4){
 				Items.push_back("Paper Towel");
 				total += 1.00;
 				Titems++;
 				continue;
 			}
-			if (sseven = 5){
+			if (sseven == 5){
 				Items.push_back("Gum");
 				total += 1.50;
 				Titems++;
 				continue;
 			}
-			if (sseven = 0){
+			if (sseven == 0){
 				continue;;
 			}
 			break;
 		}
 	} while (selection != 0);
 	int fselection;
+	ofstream out;
+	string file;
 	do {
 		system("cls");
 		cout << "[1] See Total" << endl;
@@ -468,18 +471,34 @@ int main(){
 
 		switch (fselection){
 		case 1:
+			system("cls");
 			cout <<"Your Final Price: $"<< total << endl;
 			cout <<"Your Total Items: "<< Titems << endl;
 			system("pause");
 			break;
 		case 2:
+			system("cls");
+			cout << "Grocery List:" << endl;
 			for (int i = 0; i<Items.size(); i++) {
-				cout << Items[i] << " ";
-				system("pause");
+				cout << Items[i] << " " << endl;
+
 			}
+			system("pause");
+
 
 			break;
 		case 3:
+				system("cls");
+				cout << "Enter a File: ";
+			cin >> file;
+
+			if (!out.is_open()) {
+				cout << "Unable to open file for writing" << endl;
+				system("pause");
+			}
+			out << "Grocery List Was Saved to " << file << endl;
+
+		
 			break;
 		}
 
