@@ -414,11 +414,11 @@ int main(){
 			cout << "[4] Fruit" << endl;
 			cout << "[5] Vegetables" << endl;
 			cout << "[6] Other/Extra" << endl;
-			cout << setw(12) << right << "1. Candy Bar" << setw(18) << "1.00" << endl;
-			cout << setw(12) << right << "2. Soup" << setw(18) << "1.49" << endl;
-			cout << setw(12) << right << "3. Toilet Paper" << setw(18) << "1.00" << endl;
-			cout << setw(12) << right << "4. Paper Towel" << setw(18) << "1.00" << endl;
-			cout << setw(12) << right << "5. Gum" << setw(18) << "1.50" << endl;
+			cout << setw(15) << right << "1. Candy Bar" << setw(15) << "1.00" << endl;
+			cout << setw(10) << right << "2. Soup" << setw(20) << "1.49" << endl;
+			cout << setw(18) << right << "3. Toilet Paper" << setw(12) << "1.00" << endl;
+			cout << setw(17) << right << "4. Paper Towel" << setw(13) << "1.00" << endl;
+			cout << setw(9) << right << "5. Gum" << setw(21) << "1.50" << endl;
 			cout << setw(10) << right << "0. back" << endl;
 			cout << "[0] Done" << endl;
 			cin >> sseven;
@@ -465,43 +465,29 @@ int main(){
 		system("cls");
 		cout << "[1] See Total" << endl;
 		cout << "[2] List of Items" << endl;
-		cout << "[3] Print Info. To a File" << endl;
 		cout << "[0] exit program" << endl;
 		cin >> fselection;
 
 		switch (fselection){
 		case 1:
 			system("cls");
-			cout <<"Your Final Price: $"<< total << endl;
-			cout <<"Your Total Items: "<< Titems << endl;
+			cout << "Your Final Price: $" << total << endl;
+			cout << "Your Total Items: " << Titems << endl;
 			system("pause");
 			break;
 		case 2:
 			system("cls");
 			cout << "Grocery List:" << endl;
-			for (int i = 0; i<Items.size(); i++) {
-				cout << Items[i] << " " << endl;
+			for (int i = 0; i < Items.size(); i++) {
+				cout << i + 1 << ". " << Items[i] << " " << endl;
 
 			}
 			system("pause");
 
 
 			break;
-		case 3:
-				system("cls");
-				cout << "Enter a File: ";
-			cin >> file;
 
-			if (!out.is_open()) {
-				cout << "Unable to open file for writing" << endl;
-				system("pause");
-			}
-			out << "Grocery List Was Saved to " << file << endl;
-
-		
-			break;
 		}
-
 	} while (fselection != 0);
 		return 0;
 	}
